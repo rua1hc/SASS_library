@@ -1,7 +1,10 @@
+@use "sass:math";
+
 .card {
     display: block;
     padding: $base-padding;
     border: $base-border-thickness solid #ddd;
+    border-radius: math.div($base-border-radius, 4);
     box-shadow: $base-box-shadow;
 
     .card-title {
@@ -18,3 +21,7 @@
         }
     }
 }
+
+@debug "rua1hc-debug";
+@debug math.div(10, 3);
+@debug math.floor(2.9);
