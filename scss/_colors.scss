@@ -6,6 +6,9 @@
         &:hover {
             color: $val;
         }
+        // &::after {
+        //     color: red;
+        // }
     }
 
     .bg-#{$key} {
