@@ -7,6 +7,27 @@ $secondary: #1ac888;
 $error: #d32752;
 $info: #f6c31c;
 
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white,
+);
+
+// @debug map-get($colors, "green");
+// @debug map-has-key($map: , $key: )
+// @debug map-remove($map: , $keys: )
+// @debug map-merge($map1: , $map2: )
+
 //spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
