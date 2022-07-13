@@ -7,19 +7,22 @@
     }
 
     //light-dark variations
-    @for $index from 1 to 9 {
-        .text-#{$key}-light-#{$index} {
-            color: mix(white, $val, $index * 10);
-        }
-        .bg-#{$key}-light-#{$index} {
-            background-color: mix(white, $val, $index * 10);
-        }
 
-        .text-#{$key}-dark-#{$index} {
-            color: mix(black, $val, $index * 10);
-        }
-        .bg-#{$key}-dark-#{$index} {
-            background-color: mix(black, $val, $index * 10);
+    @if ($val != black and $val != white) {
+        @for $index from 1 to 9 {
+            .text-#{$key}-light-#{$index} {
+                color: mix(white, $val, $index * 10);
+            }
+            .bg-#{$key}-light-#{$index} {
+                background-color: mix(white, $val, $index * 10);
+            }
+
+            .text-#{$key}-dark-#{$index} {
+                color: mix(black, $val, $index * 10);
+            }
+            .bg-#{$key}-dark-#{$index} {
+                background-color: mix(black, $val, $index * 10);
+            }
         }
     }
 }
