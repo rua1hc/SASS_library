@@ -2,6 +2,12 @@
     .text-#{$key} {
         color: $val;
     }
+    .text-hover-#{$key} {
+        &:hover {
+            color: $val;
+        }
+    }
+
     .bg-#{$key} {
         background-color: $val;
     }
@@ -13,12 +19,22 @@
             .text-#{$key}-light-#{$index} {
                 color: mix(white, $val, $index * 10);
             }
+            .text-hover-#{$key}-light-#{$index} {
+                &:hover {
+                    color: mix(white, $val, $index * 10);
+                }
+            }
             .bg-#{$key}-light-#{$index} {
                 background-color: mix(white, $val, $index * 10);
             }
 
             .text-#{$key}-dark-#{$index} {
                 color: mix(black, $val, $index * 10);
+            }
+            .text-hover-#{$key}-dark-#{$index} {
+                &:hover {
+                    color: mix(black, $val, $index * 10);
+                }
             }
             .bg-#{$key}-dark-#{$index} {
                 background-color: mix(black, $val, $index * 10);
